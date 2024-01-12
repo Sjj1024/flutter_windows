@@ -1,9 +1,7 @@
 import "package:flutter/material.dart";
-import 'package:flutter_windows/pages/home.dart';
 import 'package:flutter_windows/stores/user.dart';
 import 'package:get/get.dart';
 
-import '../stores/sys.dart';
 
 class Login extends StatelessWidget {
   const Login({super.key});
@@ -11,7 +9,6 @@ class Login extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // 实例化状态控制器，用put，lazyPut
-    Counter counter = Get.put(Counter());
     UserInfo user = Get.put(UserInfo());
 
     // 登录组件

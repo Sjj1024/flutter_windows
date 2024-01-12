@@ -43,7 +43,7 @@ class Home extends StatelessWidget {
             const SizedBox(
               height: 10,
             ),
-            Obx(() => Text("${counter.count}")),
+            Obx(() => Text("Store存储：${counter.count}")),
             const SizedBox(
               height: 10,
             ),
@@ -76,10 +76,19 @@ class Home extends StatelessWidget {
             ),
             ElevatedButton(
                 onPressed: () {
+                  print("跳转到列表页面");
+                  Get.toNamed("/lists", arguments: {'id': '123456789'});
+                },
+                child: Text("跳转到列表页面")),
+            const SizedBox(
+              height: 10,
+            ),
+            ElevatedButton(
+                onPressed: () {
                   print("跳转到详情页面");
                   Get.toNamed("/detail", arguments: {'id': '123456789'});
                 },
-                child: Text("调到详情带参数")),
+                child: Text("跳到详情带参数")),
             const SizedBox(
               height: 10,
             ),

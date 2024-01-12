@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
       translations: MyTranslations(),
       debugShowCheckedModeBanner: false,
       initialRoute: "/login",
-      defaultTransition: Transition.fade,
+      defaultTransition: Transition.noTransition,
       getPages: AppPage.routes,
     );
   }

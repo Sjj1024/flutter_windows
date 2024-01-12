@@ -29,6 +29,16 @@ class UserApi {
   }
 
   // 获取列表数据
+  getGoods() async {
+    var result = await Request().request("/game/gamemgnt",
+        method: DioMethod.post,
+        data: {"taskuuid": "queryprod", "splist": "66"});
+    // 返回数据
+    // print("getDetail:$result");
+    return result;
+  }
+
+  // 获取列表数据
   getDetail() async {
     var result = await Request().request("/game/gamemgnt",
         method: DioMethod.post,

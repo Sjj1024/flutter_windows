@@ -18,7 +18,7 @@ class Request {
   // 工厂函数：执行初始化
   factory Request() => _instance ?? Request._internal();
 
-  // 获取实例对象
+  // 获取实例对象时，如果有实例对象就返回，没有就初始化
   static Request? get instance => _instance ?? Request._internal();
 
   /// Dio实例

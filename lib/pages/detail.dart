@@ -40,15 +40,6 @@ class _DetailState extends State<Detail> {
 
   @override
   Widget build(BuildContext context) {
-    // 获取页面传递过来的参数
-    // var args = Get.arguments;
-    // print("传递过来的参数: $args");
-    // // 提取参数
-    // var id = args['id'];
-    // // 获取路径参数并设置
-    // setState(() {
-    //   imgId = id;
-    // });
     // 详情页面组件
     return Scaffold(
       appBar: AppBar(
