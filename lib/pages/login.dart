@@ -2,7 +2,6 @@ import "package:flutter/material.dart";
 import 'package:flutter_windows/stores/user.dart';
 import 'package:get/get.dart';
 
-
 class Login extends StatelessWidget {
   const Login({super.key});
 
@@ -82,6 +81,7 @@ class Login extends StatelessWidget {
                   print("跳转到首页");
                   // 添加用户权限列表
                   user.addPower([1, 3, 5]);
+                  Get.snackbar("登陆成功", "欢迎使用Snackbar");
                   Get.toNamed("/");
                   // 使用组件的方式配置
                   // Get.to(Home(), transition: Transition.rightToLeftWithFade);

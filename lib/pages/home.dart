@@ -1,5 +1,6 @@
 import "package:flutter/material.dart";
 import 'package:get/get.dart';
+import "../components/loading.dart";
 import "../stores/sys.dart";
 import "../stores/user.dart";
 
@@ -78,6 +79,8 @@ class Home extends StatelessWidget {
                 onPressed: () {
                   print("跳转到列表页面");
                   Get.toNamed("/lists", arguments: {'id': '123456789'});
+                  LoadingDialog.show();
+                  // Get.toNamed("/loading");
                 },
                 child: Text("跳转到列表页面")),
             const SizedBox(
@@ -94,9 +97,21 @@ class Home extends StatelessWidget {
             ),
             ElevatedButton(
                 onPressed: () {
-                  Get.toNamed("/login");
-                  user.clear();
-                  counter.clear();
+                  Get.defaultDialog(
+                    title: "退出登录提示",
+                    middleText: "确认退出登录吗？",
+                    confirmTextColor: Colors.white,
+                    textConfirm: "确定",
+                    textCancel: "取消",
+                    onConfirm: () {
+                      Get.toNamed("/login");
+                      user.clear();
+                      counter.clear();
+                    },
+                    onCancel: () {
+                      print("取消");
+                    },
+                  );
                 },
                 child: Text("退出登录"))
           ],

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_windows/apis/app.dart';
+import 'package:flutter_windows/components/loading.dart';
 
 class Lists extends StatefulWidget {
   const Lists({super.key});
@@ -26,6 +27,10 @@ class _ListsState extends State<Lists> {
     var goodsData = res['response_data']['data'];
     setState(() {
       goods = goodsData;
+    });
+    Future.delayed(Duration(seconds: 2), () {
+      print("退出加载...");
+      // LoadingDialog.hide();
     });
   }
 
