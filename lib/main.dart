@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
           appBarTheme: const AppBarTheme(
             centerTitle: true,
           )),
-      locale: const Locale('zh'),
+      locale: Get.deviceLocale,
       translations: MyTranslations(),
       debugShowCheckedModeBanner: false,
       initialRoute: "/login",

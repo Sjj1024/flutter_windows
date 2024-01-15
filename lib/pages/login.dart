@@ -13,7 +13,7 @@ class Login extends StatelessWidget {
     // 登录组件
     return Scaffold(
       appBar: AppBar(
-        title: Text("登录页"),
+        title: Text("loginPage".tr),
         automaticallyImplyLeading: false,
       ),
       body: Center(
@@ -27,8 +27,8 @@ class Login extends StatelessWidget {
             Container(
               width: 180,
               child: TextField(
-                decoration: const InputDecoration(
-                  hintText: "请输入用户名",
+                decoration: InputDecoration(
+                  hintText: 'userName'.tr,
                 ),
                 onChanged: (value) {
                   print("输入框的值变化了：$value");
@@ -42,8 +42,8 @@ class Login extends StatelessWidget {
             Container(
               width: 180,
               child: TextField(
-                decoration: const InputDecoration(
-                  hintText: "请输入密码",
+                decoration: InputDecoration(
+                  hintText: 'password'.tr,
                 ),
                 obscureText: true,
                 onChanged: (value) {
@@ -66,7 +66,7 @@ class Login extends StatelessWidget {
                       print("增加年龄");
                       user.addAge();
                     },
-                    child: Text("增加年龄")),
+                    child: Text("addAge".tr)),
                 SizedBox(
                   width: 10,
                 ),
@@ -86,7 +86,21 @@ class Login extends StatelessWidget {
                   // 使用组件的方式配置
                   // Get.to(Home(), transition: Transition.rightToLeftWithFade);
                 },
-                child: Text("点击登录")),
+                child: Text("login".tr)),
+            const SizedBox(
+              height: 20,
+            ),
+            ElevatedButton(
+                onPressed: () {
+                  print("切换中英文: ${Get.locale}");
+                  if (Get.locale.toString() == "zh_CN") {
+                    Get.updateLocale(const Locale("en_US"));
+                  } else {
+                    // 添加用户权限列表
+                    Get.updateLocale(const Locale("zh_CN"));
+                  }
+                },
+                child: Text("switchLanguage".tr)),
             const SizedBox(
               height: 100,
             ),

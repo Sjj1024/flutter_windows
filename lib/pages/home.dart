@@ -71,7 +71,7 @@ class Home extends StatelessWidget {
                   print("添加Powers");
                   user.addPower([10]);
                 },
-                child: Text("添加Power：10")),
+                child: Text("addPowers".trParams({"power": "10"}))),
             const SizedBox(
               height: 10,
             ),
