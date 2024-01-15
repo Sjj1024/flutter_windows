@@ -45,6 +45,9 @@ flutter pub get
 flutter run
 ```
 
+4.修改项目名称
+想要快速修改项目名称和id，可以看这篇文章，使用rename非常快速方便的修改：https://xiaoshen.blog.csdn.net/article/details/135602066   
+
 # 项目截图
 
 ![](https://jsd.cdn.zzko.cn/gh/1024huijia/FileHub@main/root/flutter/1705289866045image.png)
