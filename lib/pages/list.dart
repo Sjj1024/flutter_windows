@@ -49,14 +49,14 @@ class _ListsState extends State<Lists> {
           children: <Widget>[
             Image.network(
               value['skillurl'],
-              width: 100,
-              height: 200,
+              width: 50,
+              height: 50,
             ),
             const SizedBox(height: 12),
             Text(
               value['pordname'],
               textAlign: TextAlign.center,
-              style: const TextStyle(fontSize: 20),
+              style: const TextStyle(fontSize: 12),
             )
           ],
         ),

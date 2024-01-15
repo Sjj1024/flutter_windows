@@ -1,6 +1,6 @@
 # flutter_windows
 
-一个跨平台的桌面软件，使用流行的get来管理路由，使用getx来管理数据状态，并且配置了国际化支持。使用dio来管理网络请求，
+一个跨平台的flutter开发模板，使用流行的get来管理路由，使用getx来管理数据状态，并且配置了国际化支持。使用dio来管理网络请求，
 使用shared_preferences实现本地临时数据存储，并且实现了全局loading效果，可以支持快速开发使用。
 
 # 分支介绍
@@ -55,3 +55,5 @@ flutter run
 ![](https://jsd.cdn.zzko.cn/gh/1024huijia/FileHub@main/root/flutter/1705289936286image.png)
 国际化配置：
 ![](https://jsd.cdn.zzko.cn/gh/1024huijia/FileHub@main/root/flutter/1705299265544image.png)
+手机端展示：   
+![](https://jsd.cdn.zzko.cn/gh/1024huijia/FileHub@main/root/flutter/all.png)
