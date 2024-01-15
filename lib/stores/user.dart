@@ -1,6 +1,10 @@
+import 'package:flutter_windows/utils/storeage.dart';
 import 'package:get/get.dart';
 
 class UserInfo extends GetxController {
+  // 本地存储对象
+  final storage = Storage();
+
   // 用户名字
   var name = "".obs;
 
@@ -18,6 +22,10 @@ class UserInfo extends GetxController {
   void onInit() {
     print('onInit');
     super.onInit();
+    storage.getStorage("name").then((value) {
+      print("得到的存储数据是: ${value}");
+      name.value = value.toString();
+    });
   }
 
   @override
@@ -29,8 +37,8 @@ class UserInfo extends GetxController {
 
   @override
   void onReady() {
-    print('onReady');
     super.onReady();
+    print('onReady');
   }
 
   // 增加状态管理的数值
@@ -42,6 +50,7 @@ class UserInfo extends GetxController {
   // 减少状态管理的数值
   void setName(String val) {
     name.value = val;
+    storage.setStorage("name", name.value);
     update();
   }
 

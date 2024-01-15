@@ -80,7 +80,6 @@ class Home extends StatelessWidget {
                   print("跳转到列表页面");
                   Get.toNamed("/lists", arguments: {'id': '123456789'});
                   LoadingDialog.show();
-                  // Get.toNamed("/loading");
                 },
                 child: Text("跳转到列表页面")),
             const SizedBox(

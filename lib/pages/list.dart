@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_windows/apis/app.dart';
 import 'package:flutter_windows/components/loading.dart';
+import 'package:get/get.dart';
 
 class Lists extends StatefulWidget {
   const Lists({super.key});
@@ -28,14 +29,17 @@ class _ListsState extends State<Lists> {
     setState(() {
       goods = goodsData;
     });
+    //
     Future.delayed(Duration(seconds: 2), () {
       print("退出加载...");
-      // LoadingDialog.hide();
+      // Get.back();
+      LoadingDialog.hide();
     });
   }
 
   // 动态列表组件
   List<Widget> _getListData() {
+    // LoadingDialog.hide();
     var tempList = goods.map((value) {
       return Container(
         decoration: BoxDecoration(
@@ -78,28 +82,7 @@ class _ListsState extends State<Lists> {
         //一行的 Widget 数量
         // childAspectRatio: 0.7,
         //宽度和高度的比例
-        children: goods.map((value) {
-          return Container(
-            decoration: BoxDecoration(
-                border: Border.all(
-                    color: const Color.fromRGBO(233, 233, 233, 0.9), width: 1)),
-            child: Column(
-              children: <Widget>[
-                Image.network(
-                  value['skillurl'],
-                  width: 100,
-                  height: 200,
-                ),
-                const SizedBox(height: 12),
-                Text(
-                  value['pordname'],
-                  textAlign: TextAlign.center,
-                  style: const TextStyle(fontSize: 20),
-                )
-              ],
-            ),
-          );
-        }).toList(),
+        children: _getListData(),
       ),
     );
   }
