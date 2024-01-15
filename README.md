@@ -1,6 +1,7 @@
 # flutter_windows
 
-一个跨平台的桌面软件，使用流行的get来管理路由，使用getx来管理状态，使用dio来管理网络请求，使用shared_preferences实现本地临时数据存储
+一个跨平台的桌面软件，使用流行的get来管理路由，使用getx来管理数据状态，并且配置了国际化支持。使用dio来管理网络请求，
+使用shared_preferences实现本地临时数据存储，并且实现了全局loading效果，可以支持快速开发使用。
 
 # 分支介绍
 
@@ -23,6 +24,26 @@ utils：工具类，包含请求类，本地数据临时存储类
 get: ^4.6.6  
 dio: ^5.4.0  
 shared_preferences: ^2.2.2
+
+# 使用方法
+
+1.克隆到本地：
+
+```agsl
+git clone  https://github.com/Sjj1024/flutter_windows
+```
+
+2.安装依赖：
+
+```agsl
+flutter pub get
+```
+
+3.运行项目：
+
+```agsl
+flutter run
+```
 
 # 项目截图
 
