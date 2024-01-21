@@ -32,22 +32,29 @@ shared_preferences: ^2.2.2
 ```agsl
 git clone  https://github.com/Sjj1024/flutter_windows
 ```
-
+ 
 2.安装依赖：
 
 ```agsl
 flutter pub get
 ```
-
+   
 3.运行项目：
 
 ```agsl
 flutter run
 ```
-
+  
 4.修改项目名称
-想要快速修改项目名称和id，可以看这篇文章，使用rename非常快速方便的修改：https://xiaoshen.blog.csdn.net/article/details/135602066   
-
+想要快速修改项目名称和id，可以看这篇文章，使用rename非常快速方便的修改：https://xiaoshen.blog.csdn.net/article/details/135602066  
+  
+5.修改平台图标
+快速修改全平台图标的方式：https://xiaoshen.blog.csdn.net/article/details/135730737
+或者修改assets中的图标，然后运行：
+```
+flutter pub run flutter_launcher_icons
+```
+  
 # 项目截图
 
 ![](https://jsd.cdn.zzko.cn/gh/1024huijia/FileHub@main/root/flutter/1705289866045image.png)
