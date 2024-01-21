@@ -24,13 +24,64 @@ class _ListsState extends State<Lists> {
 
   // 获取列表
   getGoods() async {
-    var res = await userApi.getGoods();
-    var goodsData = res['response_data']['data'];
-    setState(() {
-      goods = goodsData;
-    });
+    try {
+      var res = await userApi.getGoods();
+      var goodsData = res['response_data']['data'];
+      setState(() {
+        goods = goodsData ??
+            [
+              {
+                "pordname": "11111111111",
+                "skillurl":
+                    "https://img-blog.csdnimg.cn/67fc9799ae8e48749e82cf70b179895b.png"
+              },
+              {
+                "pordname": "11111111111",
+                "skillurl":
+                    "https://img-blog.csdnimg.cn/67fc9799ae8e48749e82cf70b179895b.png"
+              },
+              {
+                "pordname": "11111111111",
+                "skillurl":
+                    "https://img-blog.csdnimg.cn/67fc9799ae8e48749e82cf70b179895b.png"
+              },
+              {
+                "pordname": "11111111111",
+                "skillurl":
+                    "https://img-blog.csdnimg.cn/67fc9799ae8e48749e82cf70b179895b.png"
+              },
+              {
+                "pordname": "11111111111",
+                "skillurl":
+                    "https://img-blog.csdnimg.cn/67fc9799ae8e48749e82cf70b179895b.png"
+              },
+              {
+                "pordname": "11111111111",
+                "skillurl":
+                    "https://img-blog.csdnimg.cn/67fc9799ae8e48749e82cf70b179895b.png"
+              },
+              {
+                "pordname": "11111111111",
+                "skillurl":
+                    "https://img-blog.csdnimg.cn/67fc9799ae8e48749e82cf70b179895b.png"
+              },
+              {
+                "pordname": "11111111111",
+                "skillurl":
+                    "https://img-blog.csdnimg.cn/67fc9799ae8e48749e82cf70b179895b.png"
+              },
+              {
+                "pordname": "11111111111",
+                "skillurl":
+                    "https://img-blog.csdnimg.cn/67fc9799ae8e48749e82cf70b179895b.png"
+              },
+            ];
+      });
+    } catch (e) {
+      print("发送请求异常：$e");
+    }
     //
-    Future.delayed(Duration(seconds: 2), () {
+    Future.delayed(Duration(seconds: 3), () {
       print("退出加载...");
       // Get.back();
       LoadingDialog.hide();
@@ -66,24 +117,27 @@ class _ListsState extends State<Lists> {
     return tempList.toList();
   }
 
+  final innerController = ScrollController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text("产品列表"),
       ),
-      body: GridView.count(
-        crossAxisSpacing: 10.0,
-        //水平子 Widget 之间间距
-        mainAxisSpacing: 10.0,
-        //垂直子 Widget 之间间距
-        padding: const EdgeInsets.all(2),
-        crossAxisCount: 4,
-        //一行的 Widget 数量
-        // childAspectRatio: 0.7,
-        //宽度和高度的比例
-        children: _getListData(),
-      ),
+      body: Scrollbar(
+          controller: innerController,
+          child: SingleChildScrollView(
+            controller: innerController,
+            scrollDirection: Axis.horizontal,
+            child: Container(
+              width: 1920,
+              height: 100,
+              color: Colors.red,
+              child: Text(
+                  "11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111"),
+            ),
+          )),
     );
   }
 }

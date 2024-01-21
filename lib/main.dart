@@ -17,8 +17,8 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(
           primarySwatch: Colors.blue,
-          // 桌面端字体粗细不一致和繁体的情况
-          fontFamily: Platform.isWindows ? "微软雅黑" : null,
+          // 解决桌面端字体粗细不一致和繁体的情况
+          fontFamily: identical(0, 0.0) ? null : "微软雅黑",
           appBarTheme: const AppBarTheme(
             centerTitle: true,
           )),
