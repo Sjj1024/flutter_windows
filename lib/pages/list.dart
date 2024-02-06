@@ -24,8 +24,89 @@ class _ListsState extends State<Lists> {
 
   // 获取列表
   getGoods() async {
-    var res = await userApi.getGoods();
-    var goodsData = res['response_data']['data'];
+    // var res = await userApi.getGoods();
+    var goodsData = [
+      {
+        "pordname": "图片列表1",
+        "skillurl":
+            "https://jsd.cdn.zzko.cn/gh/1024huijia/FileHub@main/root/picture/10003.jpeg"
+      },
+      {
+        "pordname": "图片列表2",
+        "skillurl":
+            "https://jsd.cdn.zzko.cn/gh/1024huijia/FileHub@main/root/picture/10004.jpeg"
+      },
+      {
+        "pordname": "图片列表3",
+        "skillurl":
+            "https://jsd.cdn.zzko.cn/gh/1024huijia/FileHub@main/root/picture/10005.jpeg"
+      },
+      {
+        "pordname": "图片列表4",
+        "skillurl":
+            "https://jsd.cdn.zzko.cn/gh/1024huijia/FileHub@main/root/picture/10006.jpeg"
+      },
+      {
+        "pordname": "图片列表5",
+        "skillurl":
+            "https://jsd.cdn.zzko.cn/gh/1024huijia/FileHub@main/root/picture/10007.jpeg"
+      },
+      {
+        "pordname": "图片列表6",
+        "skillurl":
+            "https://jsd.cdn.zzko.cn/gh/1024huijia/FileHub@main/root/picture/10008.jpeg"
+      },
+      {
+        "pordname": "图片列表7",
+        "skillurl":
+            "https://jsd.cdn.zzko.cn/gh/1024huijia/FileHub@main/root/picture/10009.jpeg"
+      },
+      {
+        "pordname": "图片列表8",
+        "skillurl":
+            "https://jsd.cdn.zzko.cn/gh/1024huijia/FileHub@main/root/picture/10009.jpeg"
+      },
+      {
+        "pordname": "图片列表9",
+        "skillurl":
+            "https://jsd.cdn.zzko.cn/gh/1024huijia/FileHub@main/root/picture/10009.jpeg"
+      },
+      {
+        "pordname": "图片列表10",
+        "skillurl":
+            "https://jsd.cdn.zzko.cn/gh/1024huijia/FileHub@main/root/picture/10009.jpeg"
+      },
+      {
+        "pordname": "图片列表11",
+        "skillurl":
+            "https://jsd.cdn.zzko.cn/gh/1024huijia/FileHub@main/root/picture/10009.jpeg"
+      },
+      {
+        "pordname": "图片列表12",
+        "skillurl":
+            "https://jsd.cdn.zzko.cn/gh/1024huijia/FileHub@main/root/picture/10009.jpeg"
+      },
+      {
+        "pordname": "图片列表13",
+        "skillurl":
+            "https://jsd.cdn.zzko.cn/gh/1024huijia/FileHub@main/root/picture/100017.jpeg"
+      },
+      {
+        "pordname": "图片列表14",
+        "skillurl":
+            "https://jsd.cdn.zzko.cn/gh/1024huijia/FileHub@main/root/picture/100018.jpeg"
+      },
+      {
+        "pordname": "图片列表15",
+        "skillurl":
+            "https://jsd.cdn.zzko.cn/gh/1024huijia/FileHub@main/root/picture/100019.jpeg"
+      },
+      {
+        "pordname": "图片列表16",
+        "skillurl":
+            "https://jsd.cdn.zzko.cn/gh/1024huijia/FileHub@main/root/picture/100020.jpeg"
+      },
+    ];
     setState(() {
       goods = goodsData;
     });
