@@ -39,17 +39,24 @@ class Login extends StatelessWidget {
             const SizedBox(
               height: 20,
             ),
-            Container(
-              width: 180,
-              child: TextField(
-                decoration: InputDecoration(
-                  hintText: 'password'.tr,
+            RawKeyboardListener(
+              autofocus: true,
+              onKey: (event) {
+                print("键盘事件：${event.logicalKey}");
+              },
+              focusNode: FocusNode(),
+              child: Container(
+                width: 180,
+                child: TextField(
+                  decoration: InputDecoration(
+                    hintText: 'password'.tr,
+                  ),
+                  obscureText: true,
+                  onChanged: (value) {
+                    print("输入框的值变化了：$value");
+                    user.setPasswd(value);
+                  },
                 ),
-                obscureText: true,
-                onChanged: (value) {
-                  print("输入框的值变化了：$value");
-                  user.setPasswd(value);
-                },
               ),
             ),
             const SizedBox(
@@ -93,7 +100,7 @@ class Login extends StatelessWidget {
             ElevatedButton(
                 onPressed: () {
                   print("切换中英文: ${Get.locale}");
-                  if (Get.locale.toString() == "zh_CN") {
+                  if (Get.locale.toString().contains("zh_")) {
                     Get.updateLocale(const Locale("en_US"));
                   } else {
                     // 添加用户权限列表

@@ -2,6 +2,7 @@
 
 一个跨平台的flutter开发模板，使用流行的get来管理路由，使用getx来管理数据状态，并且配置了国际化支持。使用dio来管理网络请求，
 使用shared_preferences实现本地临时数据存储，并且实现了全局loading效果，可以支持快速开发使用。
+github仓库地址：https://github.com/Sjj1024/flutter_windows
 
 # 分支介绍
 
@@ -32,22 +33,29 @@ shared_preferences: ^2.2.2
 ```agsl
 git clone  https://github.com/Sjj1024/flutter_windows
 ```
-
+ 
 2.安装依赖：
 
 ```agsl
 flutter pub get
 ```
-
+   
 3.运行项目：
 
 ```agsl
 flutter run
 ```
-
+  
 4.修改项目名称
-想要快速修改项目名称和id，可以看这篇文章，使用rename非常快速方便的修改：https://xiaoshen.blog.csdn.net/article/details/135602066   
-
+想要快速修改项目名称和id，可以看这篇文章，使用rename非常快速方便的修改：https://xiaoshen.blog.csdn.net/article/details/135602066  
+  
+5.修改平台图标
+快速修改全平台图标的方式：https://xiaoshen.blog.csdn.net/article/details/135730737   
+或者修改assets中的图标，然后运行：
+```
+flutter pub run flutter_launcher_icons
+```
+  
 # 项目截图
 
 ![](https://jsd.cdn.zzko.cn/gh/1024huijia/FileHub@main/root/flutter/1705289866045image.png)
