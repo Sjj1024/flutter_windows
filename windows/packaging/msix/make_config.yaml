@@ -1,0 +1,12 @@
+# AppId 的值唯一标识此应用。
+# 不要在其他应用的安装程序中使用相同的 AppId 值。
+# 以下为示例代码，实际根据你的项目进行替换
+app_id: 5B599538-42B1-4826-A479-AF079F24A65D
+publisher: Jory Cai
+publisher_url: https://github.com/leanflutter/flutter_distributor
+display_name: Hello Hado
+create_desktop_icon: true
+install_dir_name: hado_world
+locales:
+  - en
+  - zh

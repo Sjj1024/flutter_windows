@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>auto_updater_example</title>
+        <description>Most recent updates to auto_updater_example</description>
+        <language>en</language>
+        <item>
+            <title>Version 1.1.1</title>
+            #发行说明-写死方式(2选1)
+            <description>
+                <![CDATA[
+            <ul>
+              <li>1、新增XX功能</li>
+              <li>2、新增XX功能</li>
+            </ul>
+                ]]>
+            </description>
+            <pubDate>Sun, 16 Feb 2022 12:00:00 +0800</pubDate>
+            #你更新程序的地址
+            <enclosure length="13400992" type="application/octet-stream"
+                url="http://wwww.xxx.com/1.1.0+1/auto_updater_example-1.1.0+2-macos.zip"
+                sparkle:edSignature="MDwCHCSU6t02nJQm+K2Lc/1Aln3f6UD7e3nCN2OdoRECHC4VjyEF/WqTqAbC8kPQkXS7oZh5T96b5pJT9SE="
+                sparkle:os="macos" sparkle:version="1.1.1" />
+        </item>
+        <item>
+            <title>Version 1.1.1</title>
+            #发行说明-写死方式(2选1)
+            <description>
+                <![CDATA[
+            <ul>
+              <li>1、调整UI展示</li>
+              <li>2、新增NFC用户登录</li>
+            </ul>
+                ]]>
+            </description>
+            <pubDate>Sun, 16 Feb 2022 12:00:00 +0800</pubDate>
+            #你更新程序的地址
+            <enclosure length="0" type="application/octet-stream"
+                url="http://carrier-mljr-test.oss-cn-beijing.aliyuncs.com/hado_file/update/flutter1111.exe"
+                sparkle:dsaSignature="MDwCHCSU6t02nJQm+K2Lc/1Aln3f6UD7e3nCN2OdoRECHC4VjyEF/WqTqAbC8kPQkXS7oZh5T96b5pJT9SE="
+                sparkle:os="windows" sparkle:version="1.1.1" />
+        </item>
+    </channel>
+</rss>

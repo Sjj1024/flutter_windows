@@ -1,10 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_windows/router/index.dart';
 import 'package:get/get.dart';
-import 'dart:io';
+import 'package:auto_updater/auto_updater.dart';
 import 'i18n/translations.dart';
 
-void main() {
+void main() async {
+  // 必须加上这一行
+  WidgetsFlutterBinding.ensureInitialized();
+  String feedURL =
+      'https://carrier-mljr-test.oss-cn-beijing.aliyuncs.com/hado_file/update/appcast.xml';
+  await autoUpdater.setFeedURL(feedURL);
+  await autoUpdater.checkForUpdates(inBackground: false);
+  // await autoUpdater.setScheduledCheckInterval(3600);
   runApp(const MyApp());
 }
 

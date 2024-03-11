@@ -1,5 +1,6 @@
 import "package:flutter/material.dart";
 import 'package:flutter_windows/stores/user.dart';
+import 'package:auto_updater/auto_updater.dart';
 import 'package:get/get.dart';
 
 class Login extends StatelessWidget {
@@ -109,8 +110,15 @@ class Login extends StatelessWidget {
                 },
                 child: Text("switchLanguage".tr)),
             const SizedBox(
-              height: 100,
+              height: 120,
             ),
+            ElevatedButton(
+                onPressed: () async {
+                  print("检查更新程序");
+                  await autoUpdater.checkForUpdates(inBackground: true);
+                  await autoUpdater.setScheduledCheckInterval(3600);
+                },
+                child: Text("检查更新")),
           ],
         ),
       ),
