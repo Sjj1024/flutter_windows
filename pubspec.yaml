@@ -39,7 +39,6 @@ dependencies:
   dio: ^5.4.0
   msix: ^3.16.7
   shared_preferences: ^2.2.2
-  auto_updater: ^0.1.7
 
 
 dev_dependencies:

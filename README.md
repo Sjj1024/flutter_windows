@@ -55,7 +55,7 @@ flutter run
 ```
 flutter pub run flutter_launcher_icons
 ```
-  
+
 # 项目截图
 
 ![](https://jsd.cdn.zzko.cn/gh/1024huijia/FileHub@main/root/flutter/1705289866045image.png)
