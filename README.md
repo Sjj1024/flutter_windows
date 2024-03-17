@@ -8,7 +8,9 @@ github仓库地址：https://github.com/Sjj1024/flutter_windows
 
 main分支：最简单的最通用的模板，集成了get路由管理和getx数据状态管理，还有全局loading效果，还有shared_preferences临时数据存储，
 仿照前端开发localstoreage来存储数据，项目结构也是仿照前端开发结构，让前端开发人员以熟悉的方式开发flutter软件，并且以最简单最快速的方式
-来开发项目。
+来开发项目。  
+
+update: 添加windows自动更新支持，当软件有更新时，就会弹窗提示自动更新
 
 # 目录结构
 
