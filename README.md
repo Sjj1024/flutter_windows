@@ -60,13 +60,14 @@ flutter pub run flutter_launcher_icons
 
 # 项目截图
 
-![](https://jsd.cdn.zzko.cn/gh/1024huijia/FileHub@main/root/flutter/1705289866045image.png)
-![](https://jsd.cdn.zzko.cn/gh/1024huijia/FileHub@main/root/flutter/1705289874889image.png)
-![](https://jsd.cdn.zzko.cn/gh/1024huijia/FileHub@main/root/flutter/1705289906511image.png)
-![](https://jsd.cdn.zzko.cn/gh/1024huijia/FileHub@main/root/flutter/1705289916595image.png)
-![](https://jsd.cdn.zzko.cn/gh/1024huijia/FileHub@main/root/flutter/1705289924713image.png)
-![](https://jsd.cdn.zzko.cn/gh/1024huijia/FileHub@main/root/flutter/1705289936286image.png)
+![img.png](images/img.png)
+![img_1.png](images/img_1.png)
+![img_2.png](images/img_2.png)
+![img_3.png](images/img_3.png)
+![img_4.png](images/img_4.png)
 国际化配置：
-![](https://jsd.cdn.zzko.cn/gh/1024huijia/FileHub@main/root/flutter/1705299265544image.png)
+![img_5.png](images/img_5.png)
 手机端展示：   
-![](https://jsd.cdn.zzko.cn/gh/1024huijia/FileHub@main/root/flutter/all.png)
+![img_6.png](images/img_6.png)![img_7.png](images/img_7.png)
+![img_8.png](images/img_8.png)![img_9.png](images/img_9.png)
+![img_10.png](images/img_10.png)
